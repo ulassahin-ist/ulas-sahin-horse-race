@@ -1,0 +1,104 @@
+<template>
+  <div class="container">
+    <div class="title">Horses</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Mock</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<style scoped>
+.container {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+</style>
