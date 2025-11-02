@@ -35,5 +35,7 @@ const props = defineProps({
 svg {
   display: inline-block;
   vertical-align: middle;
+  color: currentColor;
+  fill: currentColor !important;
 }
 </style>

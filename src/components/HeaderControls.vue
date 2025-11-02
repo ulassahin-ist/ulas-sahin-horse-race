@@ -7,7 +7,7 @@
       @click="generateHorses"
       title="Generate Horses"
     >
-      <Icon name="horse" size="26" />
+      <Icon name="horse" size="26" color="#222" />
     </button>
 
     <button
@@ -19,7 +19,7 @@
       @click="generateRaces"
       title="Generate Program"
     >
-      <Icon name="program" size="26" />
+      <Icon name="program" size="26" color="#222" />
     </button>
 
     <button
@@ -27,7 +27,7 @@
       @click="handleRaceControl"
       title="Start / Pause / Resume"
     >
-      <Icon :name="raceButtonIcon" size="26" />
+      <Icon :name="raceButtonIcon" size="26" color="#222" />
     </button>
 
     <button
@@ -35,7 +35,7 @@
       @click="emit('resetAll')"
       title="Reset All"
     >
-      <Icon name="reset" size="26" />
+      <Icon name="reset" size="26" color="#222" />
     </button>
   </div>
 </template>

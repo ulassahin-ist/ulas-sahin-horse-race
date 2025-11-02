@@ -203,7 +203,9 @@ th {
   font-weight: 600;
   text-transform: uppercase;
 }
-
+td {
+  color: black;
+}
 table {
   border-collapse: collapse;
   font-size: 14px;

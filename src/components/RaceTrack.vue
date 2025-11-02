@@ -5,32 +5,34 @@
       class="overlay countdown"
     >
       <div v-if="store.state.raceState.winner" class="winner-message">
-        <Icon name="trophy" size="40" /><br />
+        <Icon name="trophy" size="40" color="#FFFF55" /><br />
         {{ store.state.raceState.winner.name }} wins Race {{ currentRace.id }}!
       </div>
       Next race starts in {{ countdown }}...
     </div>
 
     <div class="track">
-      <div class="finish-line"></div>
+      <div class="track-inner">
+        <div class="finish-line"></div>
 
-      <div v-for="(horse, index) in raceHorses" :key="horse.id" class="lane">
-        <span class="lane-tag">{{ index + 1 }}</span>
-        <div
-          class="horse"
-          :style="{
-            left: (horse.position / currentRace.distance) * 100 + '%',
-            background: `var(--${horse.color})`,
-          }"
-        >
-          <img
-            :src="horseImages[frameIndexes[index] % horseImages.length]"
-            alt="horse"
-            class="horse-img"
-          />
-          <span class="horse-name">
-            {{ horse.name }}
-          </span>
+        <div v-for="(horse, index) in raceHorses" :key="horse.id" class="lane">
+          <span class="lane-tag">{{ index + 1 }}</span>
+          <div
+            class="horse"
+            :style="{
+              left: (horse.position / currentRace.distance) * 100 + '%',
+              background: `var(--${horse.color})`,
+            }"
+          >
+            <img
+              :src="horseImages[frameIndexes[index] % horseImages.length]"
+              alt="horse"
+              class="horse-img"
+            />
+            <span class="horse-name">
+              {{ horse.name }}
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -327,6 +329,10 @@ defineExpose({
   border-radius: 8px;
   overflow-x: clip;
   overflow-y: visible;
+}
+.track-inner {
+  position: relative;
+  overflow: visible;
 }
 
 .lane {
