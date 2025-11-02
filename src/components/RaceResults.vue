@@ -1,5 +1,5 @@
 <template>
-  <div class="container" v-if="results.length">
+  <div class="container">
     <div class="title">RESULTS</div>
 
     <div v-for="race in results" :key="race.id" class="result-block">

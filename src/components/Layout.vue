@@ -34,7 +34,7 @@
         <div
           ref="scrollWrapperResults"
           class="race-results sidebar"
-          :class="{ closed: !store.state.results.length }"
+          :class="{ closed: !store.state.results.length > 0 }"
         >
           <RaceResults @scrollToBottom="scrollResultsToBottom" />
         </div>
