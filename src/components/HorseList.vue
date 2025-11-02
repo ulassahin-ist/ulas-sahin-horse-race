@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="title">Horses</div>
+    <div class="title">HORSES</div>
     <table>
       <thead>
         <tr>
@@ -26,8 +26,22 @@
 .container {
   flex: 1;
   display: flex;
-  gap: 10px;
   flex-direction: column;
+}
+.title {
+  background: linear-gradient(145deg, #d9dbdf, #a6a9ad);
+  color: #1b1b1f;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 14px;
+}
+
+table,
+td,
+th {
+  border: 1px solid var(--table-head);
+  padding: 10px 2px;
 }
 </style>
 
