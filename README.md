@@ -10,8 +10,10 @@ This project demonstrates my approach to **state management**, **component commu
 - Generates **20 unique horses** with randomized names, colors, and conditions.  
 - Automatically creates a **6-race program**, each with 10 randomly selected horses.  
 - Displays a **live race simulation** for each round.  
-- Shows **results dynamically**, updating after each race.  
-- Includes **sound effects**, countdowns, and start/pause controls.  
+- Shows **results dynamically**, updating after each horse finishes.  
+- Includes **sound effects**, countdowns, and start/pause controls.
+- Results bar outo-scrolls to view results easier.
+- Colors are on the horse list and the horses so tracking comes with no work.  
 - Designed with a **retro-inspired interface** and smooth transitions.
 
 ---
