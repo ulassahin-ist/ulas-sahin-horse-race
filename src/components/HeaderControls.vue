@@ -66,7 +66,6 @@ const raceButtonIcon = computed(() => {
 
   return "start";
 });
-
 function handleRaceControl() {
   const { running } = raceState.value;
   const gameInProgress = store.state.gameInProgress;
@@ -74,23 +73,21 @@ function handleRaceControl() {
   const totalRaces = store.state.races.length;
   const resultsComplete =
     store.state.results.length === totalRaces && totalRaces > 0;
-
   if (!gameInProgress && resultsComplete) {
     store.commit("clearResults");
     store.commit("clearRuntime");
   }
-
   if (running) {
     emit("togglePause");
     return;
   }
-
   if (!gameInProgress && currentIndex === 0 && store.state.results.length) {
     emit("initRace");
     return;
   }
   if (gameInProgress && !running) {
     emit("cancelCountdown");
+    store.commit("incrementRaceIndex");
     setTimeout(() => emit("initRace"), 50);
     return;
   }
