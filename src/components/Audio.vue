@@ -90,6 +90,13 @@ function handleButtonClick(e) {
 }
 
 onMounted(() => {
+  const basePath = import.meta.env.BASE_URL;
+  document.querySelectorAll("audio").forEach((audio) => {
+    const src = audio.getAttribute("src");
+    if (src && src.startsWith("./")) {
+      audio.src = basePath + src.replace("./", "");
+    }
+  });
   document.addEventListener("click", handleButtonClick);
   document.addEventListener(
     "click",
